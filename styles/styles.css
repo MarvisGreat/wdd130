@@ -17,10 +17,16 @@ main {
 
 nav {
     background-color: darkblue;
-    padding: 3rem;
+    padding: 1rem;
+    flex-direction: row;
     justify-content: space-evenly;
     display: flex;
     align-items: center;
+}
+
+nav a:hover {
+    background-color: #000;
+    
 }
 
 nav a {
@@ -29,7 +35,7 @@ nav a {
     padding: 0.5rem;
     text-decoration: none;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 700; 
 
 }
 
@@ -57,26 +63,40 @@ p {
 }
 
 aside {
-    width: 20rem;
+    max-width: 30rem;
+    position: relative;
     margin: 1rem;
     text-align: center;
-    position: relative;
-}
-
-aside h2{
-    position: absolute;
-    top:   20px;
-    left: 60px;
 }
 
 aside img {
-    width: 300px;
+    width: 100%;
     height: auto;
+    display: block;
 }
+aside h2{
+    position: absolute;
+    top:   5rem;
+    left: 3rem;
+}
+
 aside p {
     font-size: 18px;
 }
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto ;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 300px ;
+}
 footer {
+    background-color: skyblue;
+    color:black;
+    padding: 2rem 1rem;
     margin-top: 20px;
     border-top: 1px solid #000;
     text-align: center;
