@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 / HtML Form-User poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend> Questions</legend>
+                <fieldset>
+                    <div class="form-item column1">
+                        <label for="fav_browser">What is your favorite browser:</label>
+                        <select id="fav_browser" name="fav_browser">
+                            <option value="choose">Choose...</option>
+                            <option value="chrome">Chrome</option>
+                            <option value="firefox">Firefox</option>
+                            <option value="safari">Safiri</option>
+                            <option value="edge">Edge</option>
+                            <option value="bing">Bing</option>
+                            <option value="other">other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pet">Do you have a household pet?</label>
+                        <input type="checkbox" id="pet" name="pet">
+                    </div>
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Ikoyi, glover road."></textarea>
+                </fieldset>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <P>2024 | HTML Form-User poll | Nwachukwu Marvellous</P>
+
+    </footer>
+</body>
+
+</html>
