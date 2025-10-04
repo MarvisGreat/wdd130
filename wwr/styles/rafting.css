@@ -14,10 +14,50 @@
 }
 
 header{
-    background-color: white;
+    margin: 1rem;
+    background-color: rgb(233,196,106);
     color: var(--neutral-background);
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    align-items: center;
+    border-bottom:  1px solid #ccc;
+    max-width: 1000px;
 }
 
+.logo img {
+    margin: 0 0.25 0 1rem;
+    width: 64px;
+    height: auto;
+}
+
+#logo {
+    font-size: 2rem ;
+    font-family: Acme, Arial, sans-serif;
+    color: var(--accent-color);
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: navy;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+.navigation a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
 body {
     font-family: var(--font-body);
     color: #222;
@@ -30,7 +70,7 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 nav, p, section, article {
@@ -44,6 +84,7 @@ nav, p, section, article {
 
 .hero {
     position: relative;
+    margin-top: 5%;
 }
 
 .hero img {
@@ -78,6 +119,9 @@ h1 {
     opacity: 0.8;
     background-color: var(--accent-color);
     color: #fff;
+}
+article h2 {
+    color: khaki
 }
 
 section h2 {
