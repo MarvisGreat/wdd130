@@ -37,7 +37,7 @@ header img {
 
 #logo {
     font-size: 2rem ;
-    font-family: Acme, Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--accent-color);
 }
 
