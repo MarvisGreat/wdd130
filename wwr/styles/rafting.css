@@ -293,7 +293,7 @@ article h2 {
 .employee_pic {
     display: flex;
     justify-content: space-around;
-    flex: wrap;
+    /* flex: wrap; */
     align-items: center;
     gap: 15px;
 }
