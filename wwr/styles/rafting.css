@@ -471,6 +471,123 @@ form button:hover {
     background-color: #044204;
 }
 
+/* === TRIPS PAGE STYLES === */
+.trip-hero {
+    position: relative;
+    width: 99%;
+    height: 70vh;
+    overflow: hidden;
+    margin: 0 -2px;
+}
+
+.trip-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip-hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 90%;
+}
+
+/* Call to Action */
+.trip-call {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.trip-call .cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.trip-call .cta-button:hover {
+    background-color: #044a04;
+}
+
+/* Trip Descriptions */
+.trip-packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.trip {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1rem;
+    transition: 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.trip h3 {
+    margin: 1rem 0 0.5rem;
+    color: var(--primary-color);
+}
+
+.trip p {
+    padding: 0 1rem;
+    color: #333;
+}
+
+.trip:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.trip:hover img {
+    filter: brightness(1.1);
+}
+/* Trip Table */
+.trip-table {
+    padding: 2rem;
+    text-align: center;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
 
 
 footer {
