@@ -412,7 +412,7 @@ footer p {
     }
 
     .employee_pic {
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 
