@@ -322,6 +322,157 @@ article h2 {
     margin-top: 5px;
 }
 
+.home-hero {
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+    height: 80vh; /* takes 80% of the screen height */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures image fills area nicely */
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 20px;          /* distance from the top */
+    right: 30px;        /* distance from the right edge */
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-align: right;
+}
+
+
+.call-to-action {
+    text-align: center;
+    background-color: var(--neutral-background);
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action h2 {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #044404;
+}
+
+.rafting-purpose {
+    text-align: center;
+}
+.rafting-edit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.rafting-edit img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rafting-edit figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ===== Newsletter Signup Form ===== */
+form {
+    background-color: var(--neutral-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+form p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #044204;
+}
+
+
+
 footer {
     padding: 20px;
     background-color: rgb(233,196,106);
